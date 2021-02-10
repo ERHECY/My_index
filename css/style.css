@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+body:before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    z-index: -1;
+    content: "";
+    position: fixed;
+    background: url(https://api.mmcee.cn/acgimg/acgurl.php) center/cover;
+}
+
+.box,
+.box-header {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+    margin: 1rem;
+}
+
+.box img,
+.box-header img {
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.box:hover,
+.box-header:hover {
+    transform: scale(1.1);
+}
+
+.box-header {
+    width: 100%;
+    max-width: 1045px;
+    height: 210px;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(226 149 64));
+    border-radius: 20px;
+}
+
+.c-1 {
+    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(90 62 121));
+}
+
+.c-2 {
+    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(26 67 133));
+}
+
+.c-3 {
+    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), #03a9f4);
+}
+
+.cover-content {
+    top: 30px;
+    left: 0;
+    right: 0;
+    position: absolute !important;
+    max-width: 100%;
+    padding: 20px;
+    color: #f5f5f5;
+    text-align: left;
+}
+
+.cover-content-header {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute !important;
+    max-width: 100%;
+    padding: 20px;
+    color: #f5f5f5;
+    text-align: left;
+}
+
+.cover-content img,
+.cover-content-header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.container {
+    max-width: 1101px;
+    text-align: center
+}
+
+@media screen and (max-width:1101px) {
+    body {
+        height: auto;
+    }
+    .box,
+    .box-header {
+        width: 90%;
+    }
+    .box {
+        height: 260px;
+    }
+    .cover-content {
+        top: 0;
+    }
+    .cover-content h1 {
+        font-size: 1.8rem;
+    }
+    .cover-content img,
+    .cover-content-header img {
+        width: 60px;
+        height: 60px;
+    }
+    .box:hover,
+    .box-header:hover {
+        transform: unset;
+    }
+}
