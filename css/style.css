@@ -67,20 +67,27 @@ body:before {
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(226 149 64));
     border-radius: 20px;
 }
 
-.c-1 {
+.cover-color-1 {
+    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(226 149 64));
+}
+
+.cover-color-2 {
     background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(90 62 121));
 }
 
-.c-2 {
+.cover-color-3 {
     background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(26 67 133));
 }
 
-.c-3 {
-    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), #03a9f4);
+.cover-color-4 {
+    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(3 169 244));
+}
+
+.cover-color-5 {
+    background-image: linear-gradient( 297deg, rgb(160 156 156 / 55%), rgb(201 181 166));
 }
 
 .cover-content {
