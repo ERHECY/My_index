@@ -50,6 +50,11 @@ body:before {
     transform: scale(1.1);
 }
 
+.box:active,
+.box-header:active {
+    transform: scale(0.9);
+}
+
 .box-header {
     width: 100%;
     max-width: 1045px;
@@ -136,6 +141,10 @@ body:before {
     }
     .box:hover,
     .box-header:hover {
+        transform: unset;
+    }
+    .box:active,
+    .box-header:active {
         transform: unset;
     }
 }
