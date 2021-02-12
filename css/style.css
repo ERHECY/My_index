@@ -155,3 +155,9 @@ body:before {
         transform: unset;
     }
 }
+
+@media screen and (max-height:888px) {
+    body {
+        height: auto;
+    }
+}
